@@ -1,4 +1,4 @@
-# Comandos Git que usamor en el proyecto
+# Comandos Git que usamos en el proyecto
 
 ## Configuración inicial
 git init                        # Inicializa el repositorio
