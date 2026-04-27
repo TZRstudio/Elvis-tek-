@@ -4,7 +4,7 @@
 git init                        # Inicializa el repositorio
 git remote add origin https://github.com/TZRstudio/Elvis-tek-     # Conecta con el repositorio remoto
 
-## Trabajo diario
+## General
 git status                      # Ver el estado de los archivos
 git add .                       # Agregar todos los cambios
 git add [archivo]               # Agregar un archivo específico
