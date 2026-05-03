@@ -2,22 +2,50 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Contacto - Todo en Blanco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Elvis-Tek</title>
   </head>
   <body>
-
     <div>
       <h1>Contacto</h1>
       <a href="index.html">Volver al inicio</a>
     </div>
-
     <div>
-      <h2>¿Querés consultar precios o disponibilidad?</h2>
-      <p>Comunicate con nosotros por los siguientes medios:</p>
-      <p>Teléfono: <strong>+598 99 000 000</strong></p>
-      <p>Correo electrónico: <strong>consultas@todoenblanco.com.uy</strong></p>
-      <p>Respondemos de lunes a viernes de 8:00 a 17:00 hs.</p>
+      <h2>Formulario de consultas</h2>
+      <form id="formConsulta">
+        <label for="nombre">Nombre *</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required><br><br>
+        <label for="apellido">Apellido *</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="family-name" required><br><br>
+        <label for="telefono">Teléfono *</label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 099123456" inputmode="numeric" maxlength="12" required><br><br>
+        <label for="email">Correo electrónico *</label><br>
+        <input type="email" id="email" name="email" placeholder="nombre@correo.com" autocomplete="email" required><br><br>
+        <label for="tipo">Tipo de consulta *</label><br>
+        <select id="tipo" name="tipo" required>
+          <option value="">— Seleccioná una opción —</option>
+          <option value="catalogo">Catálogo</option>
+          <option value="repuestos">Repuestos</option>
+          <option value="desperfectos">Desperfectos</option>
+        </select><br><br>
+        <label for="descripcion">Descripción *</label><br>
+        <textarea id="descripcion" name="descripcion" placeholder="Contanos qué necesitás..." rows="5" cols="40" required></textarea><br><br>
+        <button type="submit">Enviar consulta</button>
+      </form>
     </div>
-
+    <script>
+      document.getElementById('telefono').addEventListener('input', function () {
+        this.value = this.value.replace(/\D/g, '');
+      });
+      document.getElementById('formConsulta').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const tel = document.getElementById('telefono').value;
+        if (!/^0\d{7,10}$/.test(tel)) {
+          alert('El teléfono debe empezar con 0 y contener solo números.');
+          return;
+        }
+        alert('Consulta enviada correctamente.');
+      });
+    </script>
   </body>
 </html>
