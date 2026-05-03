@@ -2,49 +2,41 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Trabaja con Nosotros - Todo en Blanco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajá con nosotros - Elvis-Tek</title>
   </head>
   <body>
-
     <div>
-      <h1>Trabaja con Nosotros</h1>
+      <h1>Trabajá con nosotros</h1>
       <a href="index.html">Volver al inicio</a>
     </div>
-
     <div>
-      <h2>Búsqueda activa: Personal de depósito y logística</h2>
-      <p>
-        Estamos buscando personas con ganas de trabajar en nuestro depósito
-        en Rivera. Si te interesa formar parte del equipo, leé los requisitos
-        y mandanos tu CV.
-      </p>
+      <h2>Formulario de postulación</h2>
+      <form id="formTrabajo">
+        <label for="email">Correo electrónico *</label><br>
+        <input type="email" id="email" name="email" placeholder="nombre@correo.com" autocomplete="email" required><br><br>
+        <label for="texto">Contanos sobre vos *</label><br>
+        <textarea id="texto" name="texto" placeholder="Tu experiencia, habilidades, por qué te interesa trabajar con nosotros..." rows="5" cols="40" required></textarea><br><br>
+        <label for="cv">Currículum (PDF) *</label><br>
+        <input type="file" id="cv" name="cv" accept=".pdf" required><br><br>
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">Acepto ser contactado por la empresa.</label><br><br>
+        <button type="submit">Enviar postulación</button>
+      </form>
     </div>
-
-    <div>
-      <h2>Requisitos</h2>
-      <ul>
-        <li>Mayor de 18 años</li>
-        <li>Disponibilidad horaria completa</li>
-        <li>Experiencia en depósito o logística (no excluyente)</li>
-        <li>Buena predisposición para el trabajo en equipo</li>
-        <li>Residencia en Rivera o zonas cercanas</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>¿Cómo postularse?</h2>
-      <p>
-        Mandá tu currículum al siguiente correo:
-        <strong>rrhh@todoenblanco.com.uy</strong>
-      </p>
-      <p>
-        El asunto del mail debe ser exactamente:
-        <strong>POSTULACION DEPOSITO - [Tu nombre completo]</strong>
-      </p>
-      <p>
-        Ejemplo: <em>POSTULACION DEPOSITO - Juan Pérez</em>
-      </p>
-    </div>
-
+    <script>
+      document.getElementById('formTrabajo').addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!document.getElementById('acepto').checked) {
+          alert('Tenés que aceptar ser contactado para continuar.');
+          return;
+        }
+        if (document.getElementById('cv').files.length === 0) {
+          alert('Adjuntá tu currículum en PDF.');
+          return;
+        }
+        alert('Postulación enviada correctamente.');
+      });
+    </script>
   </body>
 </html>
