@@ -1,4 +1,4 @@
-/* Estilos para administrador.html */
+
 
 body {
     background-color: var(--grisClaro);
@@ -28,7 +28,7 @@ header .botonNavegacion {
     text-transform: uppercase;
 }
 
-/* Las tablas ahora ocupan el ancho disponible */
+
 table {
     width: 100%;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@ tr:hover td {
 .contenedorBotones {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espacio entre botones */
+    gap: 15px; 
     flex-wrap: wrap;
 }
 
