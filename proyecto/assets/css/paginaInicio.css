@@ -1,4 +1,4 @@
-/* Estilos específicos para index.html */
+
 
 .listaProductos {
     text-align: center;
@@ -14,7 +14,7 @@
 .imagenProducto {
     max-width: 150px;
     height: auto;
-    border-radius: 8px; /* Un toque moderno */
+    border-radius: 8px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -27,7 +27,7 @@
 
 .testimonio img {
     max-width: 70px;
-    border-radius: 50%; /* Fotos circulares para los clientes */
+    border-radius: 50%; 
     float: left;
     margin-right: 20px;
 }
