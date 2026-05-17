@@ -1,0 +1,84 @@
+/* Estilos para login.html */
+
+.seccionLogin {
+    background-color: var(--blancoPuro);
+    color: var(--medio);
+    text-align: center;
+    line-height: 1.7;
+    max-width: 520px;
+    min-height: 300px;
+    margin: 50px auto; /* Centra la caja en la página */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.seccionLogin h2 {
+    color: var(--medio);
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.seccionLogin form {
+    margin: 0 auto;
+    max-width: 420px;
+}
+
+.seccionLogin fieldset {
+    border: none;
+    padding: 0;
+}
+
+.seccionLogin label {
+    display: block; /* Para que el label esté arriba del input */
+    color: var(--oscuro);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.seccionLogin input {
+    width: 100%;
+    max-width: 360px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: var(--oscuro);
+    background-color: var(--grisClaro);
+    border: 1px solid var(--gris);
+    border-radius: 4px;
+}
+
+.seccionLogin input:focus {
+    outline: none;
+    background-color: var(--blancoCristal);
+    border-color: var(--medio);
+}
+
+.seccionLogin button {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.seccionLogin button:hover,
+.seccionLogin button:focus {
+    background-color: var(--medio);
+    color: var(--blancoPuro);
+}
+
+.seccionLogin button:active {
+    background-color: var(--oscuro);
+    color: var(--amarillo);
+}
