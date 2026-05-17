@@ -1,93 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Todo en Blanco</title>
-  </head>
-  <body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo en Blanco - Distribuidora Mayorista</title>
 
-    <div>
-      <h1>Todo en Blanco</h1>
-      <img src="img/logo.png" alt="Logo de Todo en Blanco" width="150" />
-      <p>Tu mayorista de confianza en el norte del país</p>
-      <a href="login.html">Acceso empleados</a>
-    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/paginaInicio.css">
+</head>
 
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="Logo de Todo en Blanco" class="logo">
+        <h1>Todo en blanco</h1>
 
-    <div>
-      <h2>Bienvenidos</h2>
-      <p>
-        Somos una empresa de logística y venta mayorista ubicada en Rivera,
-        Uruguay. Trabajamos con almacenes, casas de electrodomésticos y
-        comercios chicos de todo el interior del país. 
-      </p>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="botonNavegacion">Inicio</a></li>
+                <li><a href="sobreNosotros.html" class="botonNavegacion">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="botonNavegacion">Contáctanos</a></li>
+                <li><a href="trabajaConNosotros.html" class="botonNavegacion">Trabaja con nosotros</a></li>
+                <li><a href="login.html" class="botonNavegacion">Ingresar al sistema</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="seccionPresentacion">
+            <h2>Distribuidora mayorista en el norte del país</h2>
+            <p>Tu socio estratégico en logística y abastecimiento desde Rivera.</p>
+        </section>
 
-    <div>
-      <h2>¿Por qué elegirnos?</h2>
-      <p>
-        En Todo en Blanco vendemos al por mayor y nos encargamos de la
-        logística para que la mercadería llegue a destino. Trabajamos
-        directamente con comercios, sin intermediarios, con precios competitivos
-        y entregas programadas. Si buscás un proveedor confiable en el interior,
-        somos tu opción.
-      </p>
-    </div>
+        <section class="seccionPropuestaDeValor">
+            <h2>¿Por qué elegirnos?</h2>
+            <p>
+                Somos especialistas en la venta al por mayor de artículos para el hogar y tecnología. 
+                Nuestra ubicación estratégica en Rivera nos permite ofrecer precios competitivos y una logística 
+                propia que garantiza que la mercadería llegue a tu comercio sin intermediarios.
+            </p>
+        </section>
 
+        <section class="seccionProductos">
+            <h2>Nuestros Rubros</h2>
+            <ul class="listaProductos">
+                <li>
+                    <figure>
+                        <img src="assets/img/mueble.jpg" alt="Muebles para el hogar" class="imagenProducto">
+                        <figcaption>Muebles</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/img/heladera.png" alt="Electrodomésticos de línea blanca" class="imagenProducto">
+                        <figcaption>Electrodomésticos</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/img/microondas.jpg" alt="Equipos de electrónica" class="imagenProducto">
+                        <figcaption>Electrónica</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
 
-    <div>
-      <h2>Lo que dicen nuestros clientes</h2>
+        <section class="seccionCoberturaDeEmpresa">
+            <h2>Cobertura Destacada</h2>
+            <table>
+                <caption>Principales zonas de logística</caption>
+                <thead>
+                    <tr>
+                        <th>Región</th>
+                        <th>Tipo de cobertura</th>
+                        <th>Frecuencia de entrega</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rivera</td>
+                        <td>Total</td>
+                        <td>Diaria</td>
+                    </tr>
+                    <tr>
+                        <td>Artigas</td>
+                        <td>Total</td>
+                        <td>Semanal</td>
+                    </tr>
+                    <tr>
+                        <td>Tacuarembó</td>
+                        <td>Parcial</td>
+                        <td>Quincenal</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="cobertura.html">Ver mapa completo de cobertura</a></p>
+        </section>
 
-      <div>
-        <img src="img/cliente1.jpg" alt="Foto de Horacio Corantes" width="100" />
-        <p><strong>Horacio Corantes</strong></p>
-        <p>"Siempre cumplen con los tiempos de entrega. Muy recomendables."</p>
-      </div>
+        <section class="seccionTestimoniosDeClientes">
+            <h2>Testimonios</h2>
 
-      <div>
-        <img src="img/cliente2.jpg" alt="Foto de Austeberto Heneda" width="100" />
-        <p><strong>Austeberto Heneda</strong></p>
-        <p>"Buena mercadería y trato directo. Hace años que trabajamos juntos."</p>
-      </div>
+            <figure class="testimonio">
+                <img src="assets/img/cliente1.jpg" alt="Foto de Horacio Corantes">
+                <blockquote>
+                    <p>"Siempre cumplen con los tiempos de entrega. Es fundamental para mi negocio en Artigas tener un proveedor así de serio."</p>
+                </blockquote>
+                <figcaption>
+                    <cite>Horacio Corantes</cite>
+                </figcaption>
+            </figure>
 
-      <div>
-        <img src="img/cliente3.jpg" alt="Foto de Pincho Filoseda" width="100" />
-        <p><strong>Pincho Filoseda</strong></p>
-        <p>"Gran variedad de productos y buena atención."</p>
-      </div>
-    </div>
+            <figure class="testimonio">
+                <img src="assets/img/cliente2.jpg" alt="Foto de Austerberto Heneda">
+                <blockquote>
+                    <p>"Buena mercadería y trato directo. Hace años que trabajamos juntos y la confianza es total."</p>
+                </blockquote>
+                <figcaption>
+                    <cite>Austerberto Heneda</cite>
+                </figcaption>
+            </figure>
+        </section>
+    </main>
 
+    <footer>
+        <address>
+            <a href="http://instagram.com">@todoenblanco</a>
+            <a href="tel:+59845677373">4567 7373</a>
+            <a href="tel:+59895324444">095 324 444</a>
+            <a href="mailto:clientestodoenblanco@gmail.com">clientestodoenblanco@gmail.com</a>
+        </address>
+        <p>© 2026 Todo en Blanco</p>
+    </footer>
+</body>
 
-    <div>
-      <h2>Productos que manejamos</h2>
-      <ul>
-        <li>Electrodomésticos</li>
-        <li>Muebles</li>
-        <li>Electrónica</li>
-      </ul>
-    </div>
-
-
-    <div>
-      <h2>Algunos ejemplos</h2>
-      <img src="img/heladera.png" alt="Heladera" width="200" />
-      <img src="img/microondas.jpg" alt="Microondas" width="200" />
-      <img src="img/mueble.jpg" alt="Mueble" width="200" />
-    </div>
-
-
-    <div>
-      <a href="contacto.html">Consultar</a>
-    </div>
-
-
-    <div>
-      <p>Teléfono: +598 99 000 000</p>
-      <a href="https://facebook.com">Facebook</a>
-      <a href="https://instagram.com">Instagram</a>
-    </div>
-
-  </body>
 </html>
