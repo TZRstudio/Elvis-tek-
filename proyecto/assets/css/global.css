@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    max-width: 40px; /* Un poquito más grande para que se aprecie */
+    max-width: 40px; 
     height: auto;
     vertical-align: middle;
     margin-right: 10px;
@@ -42,7 +42,7 @@ header h1 {
 }
 
 nav {
-    display: block; /* Mejor dejarlo debajo en pantallas chicas o alineado */
+    display: block; 
     margin-top: 15px;
 }
 
