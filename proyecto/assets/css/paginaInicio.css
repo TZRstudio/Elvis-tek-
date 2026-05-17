@@ -1,0 +1,44 @@
+/* Estilos específicos para index.html */
+
+.listaProductos {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.listaProductos li {
+    display: inline-block;
+    margin: 15px;
+    vertical-align: top;
+}
+
+.imagenProducto {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px; /* Un toque moderno */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.testimonio {
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-bottom: 1px solid var(--grisClaro);
+}
+
+.testimonio img {
+    max-width: 70px;
+    border-radius: 50%; /* Fotos circulares para los clientes */
+    float: left;
+    margin-right: 20px;
+}
+
+.testimonio blockquote {
+    color: var(--medio);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.testimonio figcaption {
+    font-weight: 700;
+    margin-top: 10px;
+}
