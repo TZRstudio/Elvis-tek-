@@ -1,0 +1,79 @@
+/* Estilos para administrador.html */
+
+body {
+    background-color: var(--grisClaro);
+}
+
+header {
+    background-color: var(--oscuro);
+    color: var(--blancoPuro);
+    padding: 15px 20px;
+}
+
+header .botonNavegacion {
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: var(--medio);
+}
+
+.seccionTablaEmpleados {
+    background-color: var(--blancoPuro);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.seccionTablaEmpleados h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Las tablas ahora ocupan el ancho disponible */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tr:hover td {
+    background-color: var(--blancoCristal);
+}
+
+.seccionOperaciones {
+    background-color: var(--oscuro);
+    color: var(--blancoPuro);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.seccionOperaciones h2 {
+    color: var(--amarillo);
+    margin-bottom: 20px;
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre botones */
+    flex-wrap: wrap;
+}
+
+.botonOperacion {
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: var(--medio);
+    color: var(--blancoPuro);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.botonOperacion:hover {
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+}
